@@ -2,8 +2,8 @@ namespace Exc3{
     class Program
     {
         public static void Main(string[] args){
-            Point p1 = new Point(5, 3);
-            Point p2 = new Point(8, 3);
+            Point p1 = new Point(8, 3);
+            Point p2 = new Point(1, 4);
             ComparePoints(p1, p2);
         }
 

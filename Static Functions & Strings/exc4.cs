@@ -2,11 +2,11 @@ namespace Exc4{
     class Program{
         public static void Main(string[] args){
             bool valid = false;
-            while (valid is false){
+            while (valid == false){
                 Console.Write("Enter a password: ");
                 string password = Console.ReadLine();
                 bool hasDigit = false, hasLetter = false;
-                if (password.Length >=6){
+                if (password.Length >= 6){
                     for(int i = 0; i < password.Length; i++){
                         bool hasUpper = (65 <= password[i] && password[i] <= 90);
                         bool hasLower = (97 <= password[i] && password[i] <= 122);
@@ -18,9 +18,9 @@ namespace Exc4{
                             break;
                         }
                     }
-                    if(valid is false){
+                    if(valid == false){
                         Console.WriteLine("Invalid password!");
-                    }  
+                    }
                 }else{
                     Console.WriteLine("Invalid password!");
                 }

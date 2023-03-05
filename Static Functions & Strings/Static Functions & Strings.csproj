@@ -6,7 +6,7 @@
     <RootNamespace>Static_Functions___Strings</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Exc1.Program</StartupObject>
+    <StartupObject>Exc4.Program</StartupObject>
   </PropertyGroup>
 
 </Project>
