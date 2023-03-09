@@ -3,8 +3,24 @@ namespace Exc3{
     {
         public static void Main(string[] args){
             Point p1 = new Point(8, 3);
-            Point p2 = new Point(1, 4);
+            Point p2 = new Point(8, 4);
+            Point p3 = new Point(5, 4);
+            Point p4 = new Point(5, 4);
+            Point p5 = new Point(9, 1);
+
+
+
+            Console.Write($"ComparePoints(({p1.ToString()}), ({p2.ToString()})): ");
             ComparePoints(p1, p2);
+
+            Console.Write($"ComparePoints(({p2.ToString()}), ({p3.ToString()})): ");
+            ComparePoints(p2, p3);
+
+            Console.Write($"ComparePoints(({p3.ToString()}), ({p4.ToString()})): ");
+            ComparePoints(p3, p4);
+
+            Console.Write($"ComparePoints(({p4.ToString()}), ({p5.ToString()})): ");
+            ComparePoints(p4, p5);
         }
 
         public class Point{

@@ -9,7 +9,7 @@ namespace Exc2{
             Point midPoint = new Point(midX, midY);
             Console.WriteLine(p1.ToString());
             Console.WriteLine(p2.ToString());
-            Console.WriteLine(midPoint.ToString());
+            Console.WriteLine("Middle Point: " + midPoint.ToString());
         }
     }
 
