@@ -1,5 +1,5 @@
 .MODEL small
-.STACK
+.STACK 100h
 .DATA        
     msg1 db 13, 10, 'Please insert a digit: $'
     isADigit db 13, 10, 'The number is: $'
@@ -24,7 +24,7 @@
     cmp char, 57
     ja not_a_digit
     
-    ; otherwise, if char is digit - print the output
+    ; otherwise, if char is a digit - print the output
     lea dx, isADigit
     mov ah, 09h
     int 21h
@@ -38,10 +38,10 @@ not_a_digit:
     lea dx, notADigit
     mov ah, 09h
     int 21h
-       
-    
+        
 exit:
     mov ah, 4Ch
-    int 21h    
+    int 21h
+    
 END
 
