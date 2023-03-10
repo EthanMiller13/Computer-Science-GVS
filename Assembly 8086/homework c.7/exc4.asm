@@ -1,8 +1,8 @@
 .MODEL small
 .STACK
 .DATA
-  var1 db 39
-  var2 db 7
+  var1 db 00000010b
+  var2 db 00000001b
   res db ?
   rem db ?
 .CODE
@@ -12,7 +12,7 @@
   mov ax, 0
   
   mov al, [var1]
-  idiv [var2]
+  div [var2]
   
   mov [res], al
   mov [rem], ah

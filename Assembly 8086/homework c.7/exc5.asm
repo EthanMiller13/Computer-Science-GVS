@@ -3,11 +3,12 @@
 .DATA        
     msg1 db 13, 10, 'Please insert a digit: $'
     isADigit db 13, 10, 'The number is: $'
-    notADigit db 13, 10, 'The char is not a number: $'
-    char db ?
+    notADigit db 13, 10, 'The char is not a number$'
+    char db 0
 .CODE
     mov ax, @data
     mov ds, ax
+    mov ax, 0
     
     lea dx, msg1
     mov ah, 09h
@@ -29,8 +30,8 @@
     mov ah, 09h
     int 21h
     
-    lea dx, char
-    mov ah, 09h
+    mov dl, char
+    mov ah, 02h
     int 21h
     jmp exit
     

@@ -1,7 +1,7 @@
 .MODEL small
 .STACK
 .DATA
-  Array db 01, 02, 03, 04, 05, 06
+  Array db 0FFh, 0FFh, 0FFh, 04Ah, 05Fh, 06h
 .CODE
   mov ax, @data
   mov ds, ax
