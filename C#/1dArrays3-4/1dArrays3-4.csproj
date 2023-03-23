@@ -6,7 +6,7 @@
     <RootNamespace>_1dArrays3_4</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Exc2.Program</StartupObject>
+    <StartupObject>Exc4.Program</StartupObject>
   </PropertyGroup>
 
 </Project>
