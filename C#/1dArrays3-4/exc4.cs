@@ -25,10 +25,36 @@ namespace Exc4{
                 } 
             }
             int notSharedSize = 26 - sharedSize;
+            Console.WriteLine(notSharedSize);
 
             char[] remainingBoats = new char[notSharedSize];
             int remIndex = 0;
-            for (int i = 97; i < 123; i++){
+
+            for(char b = 'a'; b <= 'z'; b++){
+                Console.WriteLine(remIndex);
+                bool foundInLast = false;
+                bool foundInOneBeforeLast = false;
+
+                for (int i = 0; i < last.Length; i++){
+                    if (last[i] == b){
+                        foundInLast = true;
+                        break;
+                    }
+                }
+
+                for (int i = 0; i < oneBeforeLast.Length; i++){
+                    if (oneBeforeLast[i] == b){
+                        foundInOneBeforeLast = true;
+                        break;
+                    }
+                }
+
+                if (foundInLast == false || foundInOneBeforeLast == false){
+                    remainingBoats[remIndex] = b;
+                    remIndex++;
+                }
+            }
+            /*for (int i = 97; i < 123; i++){
                 bool inBoth = false;
                 for(int j = 0; j < last.Length; j++){
                     if(last[j] == (char)i){
@@ -47,7 +73,7 @@ namespace Exc4{
                     remainingBoats[remIndex] = (char)i;
                     remIndex++;
                 }
-            }
+            }*/
 
             Console.WriteLine($"{notSharedSize} are remained.");
             Console.WriteLine("remainingBoats: ");
