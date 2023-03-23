@@ -1,7 +1,7 @@
 namespace Exc4{
     class Program{
         public static void Main(string[] args){
-            const int size = 5;
+            const int size = 15;
             char[] last = new char[size];
             char[] oneBeforeLast = new char[size];
 
