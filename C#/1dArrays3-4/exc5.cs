@@ -20,7 +20,7 @@ namespace Exc5{
             int[] filteredArray = new int[aSize];
             int index = 0;
             for(int i = 0; i < arr.Length; i++){
-                Console.WriteLine(arr[i] != num);
+                //Console.WriteLine(arr[i] != num);
                 if(arr[i] != num){
                     filteredArray[index] = arr[i];
                     index++;

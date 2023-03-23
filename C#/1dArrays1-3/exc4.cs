@@ -29,7 +29,7 @@ namespace Exc4{
 
         //Exc C
         public static void PrintGrades(int[] grades){
-            Console.WriteLine("The factored grades are: ");
+            Console.WriteLine("The grades are: ");
             for(int i = 0; i < grades.Length; i++){
                 Console.Write(grades[i] + "\t");
             }
